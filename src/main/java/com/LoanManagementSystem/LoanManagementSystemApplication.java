@@ -17,8 +17,7 @@ public class LoanManagementSystemApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/**")
-				.allowedHeaders("*")
+				registry.addMapping("/**").allowedHeaders("*")
 				.allowedOrigins("*")
 				.allowedMethods("GET","POST","PUT","HEAD","OPTIONS","DELETE")
 				.exposedHeaders("Authorization");
